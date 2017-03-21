@@ -14,6 +14,7 @@
 		00062B3D1E802ECE0034F3D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00062B3B1E802ECE0034F3D6 /* LaunchScreen.storyboard */; };
 		00062B481E802ECF0034F3D6 /* LunarDayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00062B471E802ECF0034F3D6 /* LunarDayTests.swift */; };
 		00062B531E802ECF0034F3D6 /* LunarDayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00062B521E802ECF0034F3D6 /* LunarDayUITests.swift */; };
+		0027882E1E8153F1004928F9 /* convertDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0027882D1E8153F1004928F9 /* convertDay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		00062B4E1E802ECF0034F3D6 /* LunarDayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LunarDayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00062B521E802ECF0034F3D6 /* LunarDayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunarDayUITests.swift; sourceTree = "<group>"; };
 		00062B541E802ECF0034F3D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0027882D1E8153F1004928F9 /* convertDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = convertDay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				00062B321E802ECE0034F3D6 /* AppDelegate.swift */,
 				00062B341E802ECE0034F3D6 /* ViewController.swift */,
+				0027882D1E8153F1004928F9 /* convertDay.swift */,
 				00062B361E802ECE0034F3D6 /* Main.storyboard */,
 				00062B391E802ECE0034F3D6 /* Assets.xcassets */,
 				00062B3B1E802ECE0034F3D6 /* LaunchScreen.storyboard */,
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00062B351E802ECE0034F3D6 /* ViewController.swift in Sources */,
+				0027882E1E8153F1004928F9 /* convertDay.swift in Sources */,
 				00062B331E802ECE0034F3D6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +420,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8FWWK23S85;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
 				INFOPLIST_FILE = LunarDay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.edu.example.LunarDay;
@@ -429,6 +435,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8FWWK23S85;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
 				INFOPLIST_FILE = LunarDay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.edu.example.LunarDay;
@@ -514,6 +522,7 @@
 				00062B591E802ECF0034F3D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00062B5A1E802ECF0034F3D6 /* Build configuration list for PBXNativeTarget "LunarDayTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +531,7 @@
 				00062B5C1E802ECF0034F3D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00062B5D1E802ECF0034F3D6 /* Build configuration list for PBXNativeTarget "LunarDayUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +540,7 @@
 				00062B5F1E802ECF0034F3D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

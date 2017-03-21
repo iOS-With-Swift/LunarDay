@@ -10,9 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var lblYY: UILabel!
+    @IBOutlet weak var lblMM: UILabel!
+    @IBOutlet weak var lblDD: UILabel!
+    @IBOutlet weak var dateTimeBicker: UIDatePicker!
     @IBOutlet weak var switchbtn: UISwitch!
-    @IBOutlet weak var PtoN: UILabel!
+    @IBOutlet weak var PtoN: UILabel!	
     @IBOutlet weak var NtoP: UILabel!
+    var (dd,mm,yy) = (0,0,0)
     enum SwitchStatus {
         case switchOn
         case switchOff
@@ -40,20 +45,25 @@ class ViewController: UIViewController {
         if switchStatus == .switchOn{
             PtoN.textColor = UIColor.blue
             NtoP.textColor = UIColor.black
-            view.backgroundColor=UIColor.gray
+            //view.backgroundColor=UIColor.gray
             setmode = .posToNeg
+            
         }else if switchStatus == .switchOff{
             PtoN.textColor = UIColor.black
             NtoP.textColor = UIColor.blue
-            view.backgroundColor=UIColor.white
+            //view.backgroundColor=UIColor.white
             setmode = .negToPos
         }
     }
-    override func didReceiveMemoryWarning() {
+    
+    
+    @IBAction func convertBtn(_ sender: UIButton) {
+        splitDate(date: dateTimeBicker.date)
+        jdToDate(jd: jdFromDate(date: dateTimeBicker.date))
+    }
+        override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 
